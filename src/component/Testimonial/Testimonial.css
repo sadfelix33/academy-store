@@ -1,0 +1,185 @@
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  height: auto; /* let height adjust naturally */
+  overflow: hidden;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Outer container */
+.testimonial-wrapper {
+  width: 100%;
+  overflow-x: clip;
+  position: relative;
+}
+
+/* for desktop animation */
+.testimonial-track {
+  display: flex;
+  gap: 20px;
+  animation: slide-left 30s linear infinite;
+}
+
+/* Card style */
+.testimonial-card {
+  flex: 0 0 auto;
+  background: #002147;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+
+.testimonial-card h4 {
+  margin: 5px 0 2px;
+  font-size: 18px;
+  color: #ff9900;
+}
+
+.testimonial-card span {
+  font-size: 14px;
+  color: #a5a4a4;
+}
+
+/* Keyframes for movement */
+@keyframes slide-left {
+  0% { transform: translateX(50%); }
+  100% { transform: translateX(-50%); }
+}
+.testimonial-track.duplicate{
+  display: none;
+}
+.testimonial-track:hover {
+  animation-play-state: paused;
+}
+
+/* ----------- MOBILE View----------- */
+@media(max-width:768px) {
+  .testimonial-wrapper {
+    overflow: hidden;
+  }
+
+  .testimonial-track {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    animation: none !important; /* stop sliding animation */
+    gap: 20px;
+    align-items: center;
+    transform: none !important; /* reset transform */
+  }
+
+  .testimonial-card {
+    width:50%; 
+    max-width: 350px;
+    margin: 0 auto; /* center each card */
+  }
+
+  .testimonial-track .duplicate{
+    display: flex;
+  }
+}
+
+
+.testimonial-text {
+  font-style: italic;
+  color: #a5a4a4;
+  margin-bottom: 15px;
+  height: 80px;          
+  overflow-y: auto;      
+  padding-right: 5px; 
+}
+
+/* Optional: style the scrollbar */
+.testimonial-text::-webkit-scrollbar {
+  width: 0px;
+}
+.testimonial-text::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+.testimonial-text::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+.dot-carousel {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 240, 240);
+  padding: 40px 20px;
+}
+
+.dots {
+  margin-top: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* .dot.active {
+  background: #4facfe;
+} */
+.dot-h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.dot-carousel .testimonial-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+/* For second carousel layout */
+.testimonial-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+.stars {
+  margin-top: 8px;
+  color: gold;
+  font-size: 18px;
+}

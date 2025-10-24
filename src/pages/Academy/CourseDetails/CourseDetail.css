@@ -1,0 +1,120 @@
+.faq-section {
+  margin-top: 32px;
+  background: #f7faff;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: left;
+  margin-left: -10px;
+}
+.faq-item + .faq-item {
+  border-top: 1px solid #e0e0e0;
+}
+.faq-question:hover {
+  color: #ffcc00;
+}
+
+
+
+.enroll-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+}
+.enroll-modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 24px 28px 24px;
+  max-width: 450px;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  overflow-y: auto;
+}
+
+.enroll-modal h2 {
+  margin-bottom: 18px;
+  color: #002147;
+}
+.enroll-modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #c9c9c9;
+  font-size: 1rem;
+  outline: none ;
+}
+.close-modal {
+  position: absolute;
+  top: 10px; right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+.course-detail-page p {
+  margin: 10px ;
+  font-size: 1.1rem;
+  line-height: 1.0;
+  font-style: normal;
+  
+}
+label{
+  color: black;
+  font-style: normal;
+  font-family:roboto;
+  font-weight: 500;
+}
+.checkbox{
+  display: flex;
+  gap:20px;
+}
+.checkbox label{
+  margin-bottom: 0px;
+  height: 40px;
+}
+.checkboxes {
+ /* display: inline;  */
+   margin: 0;
+  cursor: pointer;
+  accent-color: #002147; /* maize yellow */
+}
+.gender{
+  display: flex;
+  gap: 40px;
+}
+.enroll-modal::-webkit-scrollbar {
+  /* width: 0px; */
+  display: none;
+}
+.enroll-modal::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 20px;
+}
+.enroll-modal::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+.Dob{
+  display: flex;
+  flex-direction: column;
+}
+input[type="date"]{
+font: 1em sans-serif;
+color: #002147;
+}
+.input-label{
+  display: flex;
+
+  gap: 6px;
+}
+.input-label input{
+  height: 24px;
+  width: 30px;
+}

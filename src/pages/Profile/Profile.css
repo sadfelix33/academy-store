@@ -1,0 +1,130 @@
+.profile-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background:white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  color: #2b6cb0;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.profile-header p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+.profile-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  
+}
+
+.action-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.action-card:hover {
+  background: #edf2f7;
+  transform: translateY(-5px);
+}
+.action-card svg {
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.action-card button {
+  background-color: black;
+  border: none;
+    color: white;
+    padding:10px 20px;
+    border-radius: 8px;
+  margin: 10px 0;
+}
+
+.action-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.action-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.logout-bttn {
+  margin-top: 30px;
+  justify-content: center;  
+  /* display: flex; */
+}
+
+.logout-bttn button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-bttn button:hover {
+  background: #ff9900;
+}
+/* .profile-banner {
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+} */
+ @media (max-width: 768px) {
+  .profile-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .action-card {
+    padding: 15px;
+  } 
+}
