@@ -1,0 +1,180 @@
+.about-section {
+  /* max-width: 900px; */
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width:100%;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #002147;
+}
+
+.overlay-2 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: rgba(210, 210, 240, 0.974);
+}
+.about-home strong{
+  color:whitesmoke;
+  color: white;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 18px;
+}
+.about-home h2{
+  color:rgb(220, 215, 244);
+}
+
+
+.about-values {
+  list-style: none;
+  padding: 0;
+  margin: 30px ;
+  text-align: left;
+}
+
+.about-values li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.about-btn {
+  background: #002471;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #0056b3;
+}
+
+.about-buttons {
+  margin-top: 1rem;
+
+}
+.about-buttons a {
+  color: white;
+  text-decoration: none;
+}
+/* strong {
+  color: #002471;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 18px;
+} */
+.about-home {
+  position: relative;
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 20px;
+  background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+    no-repeat center center/cover;
+  /* min-width: 500px; */
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.overlay-2 {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 3, 28, 0.802); /* transparent dark overlay */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;   
+  justify-content: center; 
+  gap: 50px;            
+  padding: 2rem;
+}
+
+.about-home {
+  flex: 1;  
+}
+
+.about-image {
+  flex: 1;  
+  display: flex;
+  justify-content: center; 
+  }
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* optional rounded edges */
+}
+
+.about-text{
+  color:rgba(80, 78, 78, 0.928);
+  text-align: left;
+  font-weight: normal;
+}
+@media (max-width: 768px) {
+  .about-flex {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap; /* allows them to shrink but not overlap */
+}
+
+  .about-home, 
+.about-image {
+  flex: 1 1 50%;   /* each takes 50% width by default */
+  min-width: 300px; /* prevent shrinking too much */
+}
+
+  .about-home {
+  height: auto; /* allow text to expand */
+  background-size: cover;
+}
+
+.overlay-2 {
+  position: relative; /* let text flow */
+  background: rgba(1, 3, 28, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+}
+  .about-image {
+    width: 100%;
+    order:-1;
+  }
+
+  .about-image img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.about-btn a{
+  color:#f9f9f9;
+  text-decoration: none;
+}

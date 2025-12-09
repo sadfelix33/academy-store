@@ -1,0 +1,128 @@
+.login-page-content {
+  width: 100%;
+  max-width: 450px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  /* margin-left: 20px; */
+}
+
+/* Buttons */
+.login-form button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #002147;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+    /* margin-left: 20px; */
+}
+
+.login-form button:hover {
+  background-color: #00102a;
+}
+
+/* Login Card */
+.login-page {
+  width: 100%;
+  max-width: 450px;
+  background:transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Text Styles */
+.login-text {
+  color: #002147;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: right;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.login-page-content h2 {
+  font-size: 1.7rem;
+  color: #002147;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sub-text {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-family: Arial, sans-serif;
+}
+
+.register-text {
+  color: #002147;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+    margin-top: 20px;
+}
+
+.register-text a {
+  color: #002147;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  color: #00102a;
+}
+
+/* Full Background */
+.auth-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(125% 125% at 50% 90%, #fff 40%, #6366f1 100%);
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .login-page-content {
+    width: 90%;
+    padding: 18px;
+    max-width: none;
+  }
+  
+  .login-form input, .login-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+  }
+  
+  .login-text{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+   .register-text {
+    font-size: 15px;
+    text-align: center;
+  }
+}

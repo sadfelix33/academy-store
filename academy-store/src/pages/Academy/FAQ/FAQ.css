@@ -1,0 +1,28 @@
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-up {
+  transition: transform 0.3s ease;
+  font-size: 1.0rem;
+  color: #002741;
+}
+
+.arrow-up.rotate {
+  transform: rotate(180deg); /* rotates arrow */
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.5;
+}

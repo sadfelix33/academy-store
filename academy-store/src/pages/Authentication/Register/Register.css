@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.register-page{
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(8px);
+}
+.register-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+}
+.register-page h2 {
+    font-size: 1.7rem;
+    color: #002147;
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.auth-form{
+    gap: 10px;
+}
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.auth-btn{
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #002147;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.auth-btn:hover {
+    background-color: #00102a;
+}
