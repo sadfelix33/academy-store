@@ -78,3 +78,8 @@ input[type="radio"]:checked {
 .apply-btns{
 width: 20px;
 }
+@media (max-width: 768px) {
+  .filter-sidebar {
+   display: none;
+  }
+}

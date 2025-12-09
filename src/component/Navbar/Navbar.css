@@ -22,9 +22,7 @@
  flex-direction: column;
  align-items: center;
   display: flex;
-  /* /* margin-top: 30px; */
-  /* margin-bottom: 30px; */
-  /* margin:  auto; */
+  
 }
 
 .spassion-name{
@@ -93,7 +91,7 @@ margin-top: 0;
   gap: 25px;
   list-style: none;
   align-items: center;
-   /* margin-top: 40px; */
+  
 }
 
 .nav-links li a {
@@ -155,8 +153,8 @@ margin-top: 0;
   .nav-links {
     display: none;
     position: absolute;
-    top: 58px;
-    right: 20px; /* hide off screen */
+    top: 65px;
+    right: 10px; /* hide off screen */
     flex-direction: column;
     background-color: #002147;
     width: 200px;
@@ -231,6 +229,8 @@ margin-top: 0;
   background-color: #e6b800; /* darker maize yellow */
   color: black;
 }
+
+/* media query for Auth */
 @media (max-width: 768px) {
   .authentication1 {
     display: none;
@@ -281,7 +281,7 @@ margin-top: 0;
   right: -50px;
   background: white;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   z-index: 1000;
@@ -341,3 +341,4 @@ margin-top: 0;
   height: 150px;
 }
 }
+

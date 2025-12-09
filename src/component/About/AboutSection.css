@@ -88,19 +88,7 @@
   border-radius: 12px;
   overflow: hidden;
 }
-/* 
 
-.about-image {
-  position: relative;
-  width: 100%;
-}
-
-.about-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-} */
 
 .overlay-2 {
   position: absolute;
@@ -122,21 +110,21 @@
 
 .about-flex {
   display: flex;
-  align-items: center;   /* vertically center image & text */
-  justify-content: center; /* center them in the middle of the container */
-  gap: 50px;             /* space between text and image */
+  align-items: center;   
+  justify-content: center; 
+  gap: 50px;            
   padding: 2rem;
 }
 
 .about-home {
-  flex: 1;  /* text takes half */
+  flex: 1;  
 }
 
 .about-image {
-  flex: 1;  /* image takes half */
+  flex: 1;  
   display: flex;
-  justify-content: center; /* centers image inside div */
-}
+  justify-content: center; 
+  }
 
 .about-image img {
   max-width: 100%;

@@ -133,8 +133,12 @@ const Academy = () => {
           </p>
           <a href="/academy" className="hero-btn">Browse Courses</a>
         </div>
-        <div className="hero-image">
-          <img src="/image/pexels-craigmdennis-205421-Photoroom.png" alt="Learning illustration"/>
+        <div className="hero-image" style={{
+            backgroundColor:'white'
+          }}>
+          <img src="/image/logo.png" alt="S-passion logo "style={{
+            marginTop:'4rem',
+          }} />
         </div>
       </section>
 
